@@ -1,0 +1,71 @@
+.countdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 70vh;
+    padding: 0 26px;
+}
+
+.countdown-time-end span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    color: var(--black);
+}
+
+/* Tamanaho do input */
+.countdown-date-wrapper {
+    width: 100%;
+    max-width: 451px;
+}
+
+/* Estilo de input */
+.countdown-date {
+    width: 100%;
+    height: 36px;
+    border: 2px solid var(--black);
+    border-radius: 26px;
+    padding: 5px;
+}
+
+/* Tamanho do botão */
+.countdown-button-wrapper {
+    width: 100%;
+    max-width: 233px;
+}
+
+/* Estilo de botão */
+.countdown-button {
+    width: 100%;
+    height: 57px;
+    background: var(--blue-300);
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.countdown-button:hover {
+    background:var(--blue-500);
+    transition: background-color .6s;
+}
+
+.countdown-button:active {
+    background:var(--blue-300);
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 500px) {
+    .countdown-time-end span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .countdown-time-end span {
+        font-size: 30px;
+    }
+}

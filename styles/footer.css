@@ -1,0 +1,44 @@
+.footer-page {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    height: 66px;
+    width: 100%;
+    background: var(--gray-500);
+    padding: 20px 30px;
+}
+
+/* Estilo do "www..." */
+.footer-page-site-wrapper {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 14px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+/* Estilo dos ícones */
+.footer-page-image-wrapper {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 425px) {
+    .footer-page {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .footer-page-site-wrapper {
+        margin-top: 5px;
+    }
+
+    .footer-page-image-wrapper {
+        margin-bottom: 5px;
+    }
+}
